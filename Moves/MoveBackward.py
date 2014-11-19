@@ -4,7 +4,7 @@ import time
 
 deg = 25
 midFloor = 30
-hipSwing = 25
+hipSwing = 22
 pause = 0.5
 
 # tripod1 = RF,LM,RB

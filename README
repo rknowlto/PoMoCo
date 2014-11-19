@@ -1,3 +1,33 @@
+PoCoMo 1.2 - by Michal
+1) Speed optimizations, now everything at least 3x faster
+2) Virtual (kinematic) robot for GUI much faster (100x) and does not require matplotlib anymore
+3) Dancing GUI (see http://forum.arcbotics.com/viewtopic.php?f=21&t=481&start=20#p3181)
+4) Binary data transfer now icludes Head servo - requires modification of Servotor32 firmware
+
+
+PoMoCo 1.1 - by Michal
+1.) Multipoint offset calibration
+see http://forum.arcbotics.com/viewtopic.php?f=12&t=481&p=2981#p2981
+
+2.) Binary data transfer
+For 18 servos. Needs modified Servotor32 2.1
+see http://forum.arcbotics.com/viewtopic.php?f=12&t=481&p=2981#p2979
+
+3.) Inverse-kinematic control
+Including GUI and Joystick interface
+see http://forum.arcbotics.com/viewtopic.php?f=12&t=207&start=26#p2969
+
+4.) Virtual (kinematic) robot for GUI
+see http://forum.arcbotics.com/viewtopic.php?f=12&t=481&p=2981#p3005
+
+5.) Rearanged GUI for readability
+Most controls are now hidden and showing on demand
+
+6.) Drawing with hexy
+see http://forum.arcbotics.com/viewtopic.php?f=12&t=481&p=2981#p3009
+
+
+
 PoMoCo 0.9 to 1.0 Changes:
 1.) All moves now run out of the Moves folder. 
 

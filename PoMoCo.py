@@ -12,17 +12,22 @@ sys.path.append('PoMoCo')
 
 import servotorComm
 from robot import hexapod
+
 import GUI
 
 if __name__ == '__main__':
-    
+
+    __builtins__.floor = 60  # this is the minimum level the legs will reach
+    __builtins__.ankleOffset = 0.0 # offset of the ankle servos, for the standard Hexy the value is 0. For full use of metal servos, mount the servos at 45 degs, see http://forum.arcbotics.com/viewtopic.php?f=12&t=471
+    __builtins__.legsMirrored = False # default = False, if you mounted the legs on the right side in mirrored fashion, set it to "True", see http://forum.arcbotics.com/viewtopic.php?f=12&t=471
+        
     # Intialize the servo controller
     controller = servotorComm.Controller()
     
     # Set up the servo controller to run Hexy
     hexy = hexapod(controller)
     __builtins__.hexy = hexy # sets 'hexy' to be a global variable common to all modules
-    __builtins__.floor = 60  # this is the minimum level the legs will reach
+    
     
     # Go through the Moves folder to find move files
     moves = []

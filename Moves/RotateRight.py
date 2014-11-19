@@ -1,6 +1,6 @@
 import time
 
-deg = -40
+deg = -35
 
 # set neck to where body is turning
 hexy.neck.set(deg)
